@@ -1,6 +1,8 @@
 defmodule AOC do
   defmacro __using__(_) do
     quote do
+      def solve(), do: __MODULE__.solve()
+
       def test() do
         parse_and_solve("test_input")
       end
