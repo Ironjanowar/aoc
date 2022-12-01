@@ -3,6 +3,6 @@ defmodule Mix.Tasks.Try do
 
   @impl Mix.Task
   def run(_args) do
-    Mix.shell().info(AOC.solve())
+    Mix.shell().info(Cuwano.test())
   end
 end
