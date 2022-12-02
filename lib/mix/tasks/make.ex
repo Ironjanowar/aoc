@@ -11,10 +11,10 @@ defmodule Mix.Tasks.Make do
 
     makefile = """
     test:
-      mix run -e "#{app_module}.test()"
+    \tmix run -e "#{app_module}.test()"
 
     solve:
-      mix run -e "#{app_module}.solve()"
+    \tmix run -e "#{app_module}.solve()"
     """
 
     File.write!("Makefile", makefile)
