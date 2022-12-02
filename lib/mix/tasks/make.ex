@@ -10,7 +10,7 @@ defmodule Mix.Tasks.Make do
       app_string |> String.split("_") |> Enum.map(&String.capitalize/1) |> Enum.join("")
 
     makefile = """
-    test:
+    try:
     \tmix run -e "#{app_module}.test()"
 
     solve:
