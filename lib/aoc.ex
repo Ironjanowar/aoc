@@ -15,7 +15,7 @@ defmodule AOC do
       end
 
       defp parse_and_solve(file_name) do
-        file_name |> parse_input() |> solve()
+        file_name |> parse_input() |> solve() |> IO.inspect()
       end
 
       defp parse_input(file) do
